@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhinav Srivastav — Web Developer & Graphic Designer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-mode="dev">
+
+<div id="cursor-glow"></div>
+<div id="reg-cursor" aria-hidden="true">
+  <span class="reg-ring reg-c"></span>
+  <span class="reg-ring reg-m"></span>
+  <span class="reg-ring reg-y"></span>
+  <span class="reg-cross"></span>
+</div>
+
+<!-- printing-press mode transition -->
+<div id="mode-transition" aria-hidden="true">
+  <div class="press-bar bar-c"></div>
+  <div class="press-bar bar-m"></div>
+  <div class="press-bar bar-y"></div>
+  <div class="press-bar bar-k"></div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">ABHINAV<span>.</span></div>
+
+    <div class="navlinks navlinks-dev">
+      <a href="#work">Work</a>
+      <a href="#stack">Stack</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a href="mailto:toabhinav2008@gmail.com" class="resume-btn">Hire me</a>
+    </div>
+
+    <div class="navlinks navlinks-design">
+      <a href="#d-work">Work</a>
+      <a href="#d-craft">Craft</a>
+      <a href="#d-process">Process</a>
+      <a href="#d-contact">Contact</a>
+      <a href="mailto:toabhinav2008@gmail.com" class="resume-btn">Hire me</a>
+    </div>
+
+    <button id="mode-toggle" class="mode-toggle" type="button" aria-label="Switch to graphic design portfolio">
+      <svg class="toggle-icon icon-code" viewBox="0 0 24 24" fill="none"><path d="M8 4L2 12L8 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 4L22 12L16 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="toggle-icon icon-brush" viewBox="0 0 24 24" fill="none"><path d="M4 20c0-3 2-5 5-5s5 2 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9.5 15L18 4.5c.8-1 2.3-1 3 0 .8 1 .6 2.4-.4 3.2L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="19" r="1.4" fill="currentColor"/></svg>
+      <span class="toggle-label">
+        <span class="toggle-word word-design">Design mode</span>
+        <span class="toggle-word word-dev">Dev mode</span>
+      </span>
+    </button>
+  </div>
+</nav>
+
+<div id="dev-view" class="view is-active">
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow">based in delhi, india — open for developer roles</div>
+
+    <h1 class="kinetic" id="kinetic-title" aria-label="Abhinav Srivastav"></h1>
+
+    <div class="role-line"><span id="role-text"></span><span class="cursor-blink"></span></div>
+
+    <p class="hero-sub">B.Tech Computer Science student (2026) who builds full-stack web apps end to end — from database schema to pixel-level UI. Comfortable across React, Python/Flask, MySQL and REST APIs, with a recruiter's eye for what actually gets shipped.</p>
+
+    <div class="hero-cta">
+      <a href="#work" class="btn btn-primary">See the work →</a>
+      <a href="#contact" class="btn btn-ghost">Let's talk</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="bar"></div>scroll</div>
+</header>
+
+<div class="marquee-band">
+  <div class="marquee-track" id="marquee-track">
+    <!-- filled by JS: duplicated for seamless loop -->
+  </div>
+</div>
+
+<section id="impact">
+  <div class="wrap">
+    <div class="section-label reveal">// impact</div>
+    <div class="stats-grid reveal">
+      <div class="stat-card">
+        <div class="stat-num" data-count="4">0</div>
+        <div class="stat-label">full-stack projects shipped</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" data-count="70" data-suffix="+">0</div>
+        <div class="stat-label">candidates placed as a technical recruiter</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" data-count="2026">0</div>
+        <div class="stat-label">graduating, B.Tech Computer Science</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="section-label reveal">// selected work</div>
+    <h2 class="section-title reveal">Things I've built</h2>
+
+    <div class="project-list">
+      <div class="project-card reveal" data-tilt>
+        <div class="project-top">
+          <div class="project-index">P01 / Full-Stack</div>
+        </div>
+        <h3>Authenticity Validator for Academia</h3>
+        <p>A certificate verification system that detects fraudulent academic credentials in real time, with database-backed validation logic behind every check.</p>
+        <div class="tag-row">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Database Integration</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-tilt>
+        <div class="project-top">
+          <div class="project-index">P02 / Dashboard</div>
+        </div>
+        <h3>Real-Time Inventory Management System</h3>
+        <p>A restaurant inventory platform with live stock tracking, recipe-based inventory deduction, supplier management, and Chart.js-powered visual dashboards.</p>
+        <div class="tag-row">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Chart.js</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-tilt>
+        <div class="project-top">
+          <div class="project-index">P03 / Web App</div>
+        </div>
+        <h3>Restaurant Website</h3>
+        <p>A responsive restaurant site with an interactive UI, dynamic menu display, and smooth navigation across devices.</p>
+        <div class="tag-row">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-tilt>
+        <div class="project-top">
+          <div class="project-index">P04 / Data Viz</div>
+        </div>
+        <h3>Digital Data Dashboard</h3>
+        <p>An interactive Excel dashboard with live KPIs, dynamic charts, slicers, and data validation for analyzing financial data at a glance.</p>
+        <div class="tag-row">
+          <span class="tag">Excel</span><span class="tag">KPIs</span><span class="tag">Data Visualization</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="wrap">
+    <div class="section-label reveal">// stack</div>
+    <h2 class="section-title reveal">Tools I build with</h2>
+    <div class="two-col reveal">
+      <div class="info-card">
+        <h3>Languages & Frameworks</h3>
+        <p>JavaScript (ES6+), Python (Flask), HTML5, CSS3, SQL</p>
+        <p>React.js, Flask</p>
+      </div>
+      <div class="info-card">
+        <h3>Databases, Tools & Platforms</h3>
+        <p>MySQL, Database Design & Management</p>
+        <p>Git, GitHub, VS Code, REST API Integration, ATS Platforms</p>
+        <p>Excel (Advanced Dashboards), Cross-Browser Compatibility, Debugging</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-label reveal">// experience</div>
+    <h2 class="section-title reveal">Where I've worked</h2>
+
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <h3>Web Development Intern — NETCAMP</h3>
+        <div class="tl-date">Jan 2025 – Jun 2025</div>
+        <ul>
+          <li>Built responsive web pages and UI components using HTML, CSS, JavaScript and React.js</li>
+          <li>Integrated third-party REST APIs to enhance application functionality and UI/UX performance</li>
+          <li>Collaborated with the development team following agile practices and version control via Git</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <h3>Technical Recruiter (IT Roles) — E-Solutions</h3>
+        <div class="tl-date">Jan 2026 – Jun 2026</div>
+        <ul>
+          <li>Achieved 70+ qualified candidate submissions within 2 months, managing high-volume IT hiring pipelines</li>
+          <li>Leveraged technical knowledge of frontend, backend and full-stack roles to improve screening accuracy</li>
+          <li>Used AI-powered automation tools to streamline sourcing and reduce time-to-shortlist</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="section-label reveal">// education & achievements</div>
+    <h2 class="section-title reveal">The foundation</h2>
+    <div class="two-col reveal">
+      <div class="info-card">
+        <h3>Education</h3>
+        <p><strong>B.Tech, Computer Science Engineering</strong><br>Raj Kumar Goel Institute of Technology, 2022 – 2026 · CGPA 7</p>
+        <p>Relevant coursework: Data Structures, Operating Systems, Database Management Systems, Computer Networks</p>
+      </div>
+      <div class="info-card">
+        <h3>Achievements</h3>
+        <ul>
+          <li>Consistent DSA practice on LeetCode and HackerRank</li>
+          <li>Active in hackathons and technical workshops</li>
+          <li>Led team to 1st place, National Healthcare Event, Delhi (Group Dance)</li>
+          <li>2nd position, District Level Athletics Championship</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="section-label reveal">// contact</div>
+    <h2 class="contact-headline reveal">Let's build<br>something bold.</h2>
+    <div class="contact-links reveal">
+      <a href="mailto:toabhinav2008@gmail.com">toabhinav2008@gmail.com</a>
+      <a href="tel:+917042164489">+91 70421 64489</a>
+      <a href="https://github.com/Abhinav2283" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="http://www.linkedin.com/in/srivastavabhinav28" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Abhinav Srivastav</span>
+    <span>Delhi, India</span>
+  </div>
+</footer>
+
+</div><!-- /#dev-view -->
+
+<div id="designer-view" class="view">
+
+<header class="d-hero">
+  <span class="crop crop-tl"></span><span class="crop crop-tr"></span>
+  <span class="crop crop-bl"></span><span class="crop crop-br"></span>
+  <div class="wrap">
+    <div class="d-eyebrow">based in delhi, india — open for design work <span class="reg-mark">◎</span></div>
+
+    <h1 class="d-kinetic" id="d-kinetic-title" aria-label="Abhinav Creates"></h1>
+
+    <div class="d-role-line"><span id="d-role-text"></span><span class="d-cursor-blink"></span></div>
+
+    <p class="d-hero-sub">Graphic designer who thinks in grids, type and colour before pixels. I turn a one-line brief into a brand mark, a poster, a feed — with a coder's attention to detail and a designer's eye for restraint.</p>
+
+    <div class="d-hero-cta">
+      <a href="#d-work" class="d-btn d-btn-primary">See the craft →</a>
+      <a href="#d-contact" class="d-btn d-btn-ghost">Let's talk</a>
+    </div>
+  </div>
+  <div class="d-scroll-hint"><div class="d-bar"></div>scroll</div>
+</header>
+
+<div class="d-marquee-band">
+  <div class="d-marquee-track" id="d-marquee-track"></div>
+</div>
+
+<section id="d-impact">
+  <div class="wrap">
+    <div class="d-label reveal">◎ impact</div>
+    <div class="d-stats-grid reveal">
+      <div class="d-stat-card">
+        <div class="d-stat-num" data-count="2">0</div>
+        <div class="d-stat-label">design projects: social media & campaign creative</div>
+      </div>
+      <div class="d-stat-card">
+        <div class="d-stat-num" data-count="6" data-suffix="+">0</div>
+        <div class="d-stat-label">design tools in the kit</div>
+      </div>
+      <div class="d-stat-card">
+        <div class="d-stat-num" data-count="2026">0</div>
+        <div class="d-stat-label">building a design practice alongside code</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="d-work">
+  <div class="wrap">
+    <div class="d-label reveal">◎ selected craft</div>
+    <h2 class="d-title reveal">Things I've designed</h2>
+    <p class="d-title-note reveal">Click a project to open the full case study.</p>
+
+    <div class="d-project-grid">
+      <div class="d-card reveal" data-project="social" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="d-card-art" data-art="social">
+          <svg viewBox="0 0 200 200" class="d-art-svg"><rect x="52" y="20" width="96" height="160" rx="18" class="art-frame"/><rect x="66" y="46" width="68" height="68" rx="10" class="art-c"/><circle cx="100" cy="80" r="18" class="art-m"/><rect x="66" y="128" width="68" height="10" class="art-y-block"/></svg>
+          <span class="d-card-view">View case study →</span>
+        </div>
+        <div class="d-card-body">
+          <div class="d-card-tag">Social media & event design</div>
+          <h3>Social Media Design — College Society</h3>
+          <p>Promotional posters, banners and social graphics for college events, built to a consistent branding system.</p>
+          <div class="d-tag-row"><span class="d-tag">Photoshop</span><span class="d-tag">Illustrator</span><span class="d-tag">Canva</span></div>
+        </div>
+      </div>
+
+      <div class="d-card reveal" data-project="ngo" tabindex="0" role="button" aria-haspopup="dialog">
+        <div class="d-card-art" data-art="ngo">
+          <svg viewBox="0 0 200 200" class="d-art-svg"><circle cx="100" cy="95" r="58" class="art-frame"/><path d="M100 68c-9-14-32-10-32 8 0 20 32 40 32 40s32-20 32-40c0-18-23-22-32-8z" class="art-m"/><rect x="70" y="150" width="60" height="10" rx="5" class="art-y-block"/></svg>
+          <span class="d-card-view">View case study →</span>
+        </div>
+        <div class="d-card-body">
+          <div class="d-card-tag">Awareness campaign</div>
+          <h3>Awareness Campaign Design — NGO</h3>
+          <p>Social posts, posters and campaign creatives designed to communicate an NGO's message clearly online and offline.</p>
+          <div class="d-tag-row"><span class="d-tag">Photoshop</span><span class="d-tag">Illustrator</span><span class="d-tag">Canva</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- project case-study modal -->
+<div id="d-project-modal" class="d-modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="d-modal-backdrop" data-close></div>
+  <div class="d-modal-panel">
+    <button class="d-modal-close" type="button" data-close aria-label="Close case study">✕</button>
+    <div class="d-modal-art"></div>
+    <div class="d-modal-tag"></div>
+    <h3 class="d-modal-title"></h3>
+    <ul class="d-modal-bullets"></ul>
+    <div class="d-tag-row d-modal-tools"></div>
+  </div>
+</div>
+
+<section id="d-craft">
+  <div class="wrap">
+    <div class="d-label reveal">◎ craft</div>
+    <h2 class="d-title reveal">What's on the palette</h2>
+    <div class="d-two-col reveal">
+      <div class="d-info-card">
+        <h3>Software</h3>
+        <p>Adobe Photoshop, Adobe Illustrator, Blender, CorelDRAW, Canva, Figma</p>
+        <p>MS Excel, Word & PowerPoint for decks and presentation design</p>
+      </div>
+      <div class="d-info-card">
+        <h3>Discipline</h3>
+        <p>Branding & identity, typography & colour theory, social media & campaign creatives, poster and print design, visual storytelling</p>
+        <p>A developer's habit of documenting design decisions and keeping files organised and reusable</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="d-process">
+  <div class="wrap">
+    <div class="d-label reveal">◎ process</div>
+    <h2 class="d-title reveal">How a brief becomes a design</h2>
+    <div class="d-timeline reveal">
+      <div class="d-tl-item">
+        <div class="d-tl-dot"></div>
+        <h3>Brief & reference</h3>
+        <div class="d-tl-date">Step 01</div>
+        <p>Understand the audience and constraints first — mood boards and references before any pixels.</p>
+      </div>
+      <div class="d-tl-item">
+        <div class="d-tl-dot"></div>
+        <h3>Type & grid</h3>
+        <div class="d-tl-date">Step 02</div>
+        <p>Lock the type scale and grid early so every later decision has a structure to sit inside.</p>
+      </div>
+      <div class="d-tl-item">
+        <div class="d-tl-dot"></div>
+        <h3>Colour & system</h3>
+        <div class="d-tl-date">Step 03</div>
+        <p>Build a small, deliberate palette and apply it consistently across every touchpoint.</p>
+      </div>
+      <div class="d-tl-item">
+        <div class="d-tl-dot"></div>
+        <h3>Proof & ship</h3>
+        <div class="d-tl-date">Step 04</div>
+        <p>Check at real scale — sleeve, screen, storefront — before calling anything final.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="d-contact" class="d-contact-section">
+  <div class="wrap">
+    <div class="d-label reveal">◎ contact</div>
+    <h2 class="d-contact-headline reveal">Got a brief?<br>Let's design it.</h2>
+    <div class="d-contact-links reveal">
+      <a href="mailto:toabhinav2008@gmail.com">toabhinav2008@gmail.com</a>
+      <a href="tel:+917042164489">+91 70421 64489</a>
+      <a href="https://github.com/Abhinav2283" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="http://www.linkedin.com/in/srivastavabhinav28" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer class="d-footer">
+  <div class="wrap">
+    <span>© 2026 Abhinav Srivastav</span>
+    <span>Delhi, India</span>
+  </div>
+</footer>
+
+</div><!-- /#designer-view -->
+
+<script src="script.js"></script>
+</body>
+</html>
